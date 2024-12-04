@@ -47,7 +47,6 @@ nav {
     border-radius: 13px;
     margin-bottom: 20px;
     margin-top: 20px;
-    
 }
 
 a.menu {
@@ -184,7 +183,8 @@ a.tetejere:link {
     text-transform: uppercase;
 }
 #pontquiz {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #osszpontsz {
@@ -220,7 +220,6 @@ footer {
     text-align: center;
     font-weight: bold;
     flex-basis: 100%;
-    
 }
 
 
