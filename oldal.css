@@ -172,7 +172,15 @@ a.tetejere:link {
     text-transform: uppercase;
     border-radius: 8px;
 }
-
+.tovabb {
+    width: 200px;
+    cursor: pointer;
+    background-color: rgb(85, 107, 47);
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 #pontquiz {
     margin-left: 40%;
     margin-right: 40%;
@@ -210,7 +218,7 @@ footer {
     font-size: 30px;
     text-align: center;
     font-weight: bold;
-    width: 100%;
+    flex-basis: 100%;
 }
 
 
@@ -368,14 +376,6 @@ footer {
     }
 
 
-    .tovabb {
-        width: 200px;
-        cursor: pointer;
-        background-color: rgb(85, 107, 47);
-        color: black;
-        font-size: 25px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+    
 
 }
