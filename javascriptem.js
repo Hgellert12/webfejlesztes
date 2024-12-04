@@ -1,4 +1,4 @@
-const osszpont = 5
+
 const elso = document.getElementById("elso")
 const masodik = document.getElementById("masodik")
 const harmadik = document.getElementById("harmadik")
@@ -28,11 +28,32 @@ document.getElementById("gomb4").addEventListener
 function negyediktuntetes() {
     otodik.style.display = "block"; negyedik.style.display = "none"
 }
-
+document.getElementById("vgomb2").addEventListener
+("click", masodikvissza);
+function masodikvissza() {
+    masodik.style.display = "none"; elso.style.display = "block"
+}
+document.getElementById("vgomb3").addEventListener
+("click", harmadikvissza);
+function harmadikvissza() {
+    harmadik.style.display = "none"; masodik.style.display = "block"
+}
+document.getElementById("vgomb4").addEventListener
+("click", negyedikvissza);
+function negyedikvissza() {
+    negyedik.style.display = "none"; harmadik.style.display = "block"
+}
+document.getElementById("vgomb5").addEventListener
+("click", otodikvissza);
+function otodikvissza() {
+    otodik.style.display = "none"; negyedik.style.display = "block"
+}
 
 document.getElementById("beadas").addEventListener
     ("click", pontszamitas)
 function pontszamitas() {
+    event.preventDefault();
+    const osszpont = 5
     const a = document.getElementById("T3").checked;
     let pont = 0
 
