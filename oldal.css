@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'oldal';
+    src: url(Lora/Lora-Italic-VariableFont_wght.ttf);
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'oldal';
+    color: rgb(85, 107, 47);
+    background-color: rgb(245, 245, 220);
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(245, 245, 220);
+}
+
+nav {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    background-color: rgb(139, 69, 19);
+    padding: 10px 0 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid rgb(139, 69, 19) 5px;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a.menu {
+    text-decoration: none;
+    color: rgb(245, 245, 220);
+    border: rgb(221, 210, 107) 2px solid;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 13px;
+}
+
+
+a#current {
+    background-color: rgb(221, 210, 107);
+    color: black;
+}
+
+
+.kepek {
+    width: 80%;
+    border: black solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+/*tortenethez*/
+.tortcim {
+
+    text-align: center;
+}
+
+.tortszoveg {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+}
+
+.tortszoveg1 {
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+}
+
+.tablazatos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/*sefekhez tartozik */
+.nevek {
+    text-align: center;
+}
+
+.szoveg {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.shefkepek {
+    width: 80%;
+    border: black solid 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+/*receptekhez tartozik */
+.cim {
+    margin: 5px 0 10px 0;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.kajalista {
+    line-height: 200%;
+    padding-left: 10%;
+}
+
+a.tetejere:visited,
+a.tetejere:active,
+a.tetejere:link {
+    text-decoration: underline;
+    color: rgb(85, 107, 47);
+}
+
+.teto {
+    text-align: center;
+    font-size: 23px;
+}
+
+.instrukcio {
+    padding-left: 5%;
+}
+
+
+.kerdoiv {
+    line-height: 1.7em;
+}
+
+.kerdeske {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.bekuld {
+    width: 80%;
+    height: 50px;
+    background-color: rgb(85, 107, 47);
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+#pontquiz {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#osszpontsz {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*galeria*/
+
+.navik {
+    border: 5px black solid;
+    border-radius: 13px;
+}
+
+label.error {
+    color: #FB3A3A;
+    font-weight: bold;
+}
+
+#elso,
+#masodik,
+#harmadik,
+#negyedik,
+#otodik {
+    line-height: 2em;
+}
+
+footer {
+    background-color: rgb(139, 69, 19);
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: space-around;
+        background-color: rgb(139, 69, 19);
+        padding: 10px 0 10px 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: solid rgb(139, 69, 19) 5px;
+        border-radius: 13px;
+        margin: 10px 0 10px 0;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+
+
+    a.menu:hover {
+        background-color: rgb(221, 210, 107);
+        color: black;
+        transition: 0.5s;
+    }
+
+    a.menu {
+        text-decoration: none;
+        color: rgb(245, 245, 220);
+        border: rgb(221, 210, 107) 2px solid;
+        width: 20%;
+        text-align: center;
+        border-radius: 13px;
+        padding: 5px 0 5px 0;
+        background-color: rgb(139, 69, 19);
+    }
+
+
+    .tablazatos {
+
+        flex-direction: row;
+    }
+
+    .tablazatok {
+        flex-basis: 28%;
+        margin: 0 2.5% 0 2.5%;
+        text-align: justify;
+    }
+
+    .tortcim {
+
+        vertical-align: top;
+        height: 20%;
+    }
+
+    .tortszoveg {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .tortszoveg1 {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    /*sefekhez tartozik */
+    .seftablazat {
+        width: 45%;
+        margin: 0 2.5% 0 2.5%;
+    }
+
+    /* Receptekhez tartozik */
+    .kajas {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 95%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .kepek {
+        width: 70%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-height: 700px;
+    }
+
+    .kajalista {
+
+        line-height: 1.8em;
+        margin: 0 auto;
+        font-size: 1.3em;
+        padding-left: 20px;
+        list-style-position: inside;
+        /* Listajelzők a szöveg belsejébe kerülnek */
+    }
+
+    .kajalista li {
+        margin-bottom: 10px;
+    }
+
+    .cim {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 20px auto;
+
+
+
+    }
+
+    .instrukcio {
+        font-size: 1.5em;
+        line-height: 2em;
+        margin: 10px auto;
+
+    }
+
+    .teto {
+        text-align: center;
+        margin: 20px auto;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    /*Kérdőívhez tartozik*/
+    .kerdoivestabl {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .kerdoiv {
+        line-height: 3em;
+        padding-bottom: 3.5em;
+        text-align: justify
+    }
+
+    .bekuld {
+        width: 25%;
+        cursor: pointer;
+    }
+
+    #bekuldo {
+        vertical-align: top;
+    }
+
+
+    .tovabb {
+        width: 200px;
+        cursor: pointer;
+        background-color: rgb(85, 107, 47);
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+}

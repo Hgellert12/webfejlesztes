@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hajdu Gellert">
+    <meta name="content" content="This page contains a form and a questionnaire about cooking">
+    <title>questionnaire</title>
+    <link rel="icon" type="image/x-icon" href="kepek/knife.png">
+    <link rel="stylesheet" href="oldal.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Gastronomy</h1>
+            <H2>Questionnaire</H2>
+        </header>
+        <nav>
+            <a href="index.html" class="menu">History</a>
+            <a href="sefek.html" class="menu">Chefs</a>
+            <a href="receptek.html" class="menu">Recipes</a>
+
+            <a href="quiz.html" class="menu">Quiz</a>
+            <a href="#" id="current" class="menu">Questionnaire</a>
+        </nav>
+        <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="kerdoiv">
+            <table class="kerdoivestabl">
+                <tr>
+                    <td class="kerdoiv"><label for="nev" class="kerdeske">Your Name:</label><input type="text"
+                            name="nev" id="nev" placeholder="your name goes here"></td>
+                    <td class="kerdoiv"><label for="email" class="kerdeske">Email</label><input type="email" name="email"
+                            id="email" placeholder="example@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td class="kerdoiv"><label for="telefon" class="kerdeske">Mobile number</label><input type="tel"
+                            name="telefon" id="telefon" placeholder="+36-30-123-4567"></td>
+                    <td class="kerdoiv"><label for="beleegy" class="kerdeske">I consent to my provided data to be
+                            forwarded</label> <input type="checkbox" name="beleegy" id="beleegy"></td>
+                </tr>
+                <tr>
+                    <td class="kerdoiv">
+                        <label class="kerdeske">Who is your favourite chef from the following?</label><br>
+                        <input type="radio" name="kedvenc" value="GO" checked>Gordon Ramsay <br>
+                        <input type="radio" name="kedvenc" value="JA">Jamie Oliver <br>
+                        <input type="radio" name="kedvenc" value="WO">Wolgang Puck <br>
+                        <input type="radio" name="kedvenc" value="GU">Guy Fieri <br>
+                    </td>
+                    <td class="kerdoiv"><label class="kerdeske">Whose recipe have you made before?
+                        </label><br>
+                        Gordon Ramsay<input type="checkbox" name="korabb" value="c1"> <br>
+                        Jamie Oliver<input type="checkbox" name="korabb" value="c2"> <br>
+                        Wolgang Puck<input type="checkbox" name="korabb" value="c3"> <br>
+                        Guy Fieri<input type="checkbox" name="korabb" value="c4"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kerdoiv">
+                        <label for="skala" class="kerdeske">On a scale from 1 to 10 how would you rate your cooking
+                            skills?</label><br>
+                        1<input type="range" name="skala" min="0" max="10" step="1" value="5" id="skala">10
+                    </td>
+                    <td class="kerdoiv">
+                        <label for="orak" class="kerdeske">On average how many hours do you spend in the kitchen a
+                            day?</label><br>
+                        <input type="number" name="orak" min="0" max="24" id="orak">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="kerdoiv">
+                        <label for="kedvencetel" class="kerdeske">What’s your favorite dish to cook?</label><br>
+                        <input type="text" id="kedvencetel" name="kedvencetel" placeholder="Enter your dish name">
+
+                    </td>
+                    <td class="kerdoiv">
+                        <label for="utolso" class="kerdeske">When was the last time you tried a new recipe?</label><br>
+                        <input type="date" id="utolso" name="utolso">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="kerdoiv"><label for="metodus" class="kerdeske">What’s your go-to cooking method?</label>
+                        <br>
+                        <select id="metodus" name="fozesmetodus">
+                            <option value="baking">Baking</option>
+                            <option value="frying">Frying</option>
+                            <option value="boiling">Boiling</option>
+                            <option value="grilling">Grilling</option>
+                            <option value="steaming">Steaming</option>
+                        </select>
+                    </td>
+                    <td id="bekuldo"><input type="submit" value="submit" class="bekuld"></td>
+                </tr>
+
+
+
+
+
+
+
+            </table>
+        </form>
+        
+    </div>
+
+
+
+
+
+
+
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#kerdoiv").validate({
+                rules: {
+                    nev: "required", email: {
+                        required: true,
+                        email: true
+                    },
+                    telefon: { required: true },
+                    beleegy: { required: true },
+                    orak: { required: true },
+                    kedvencetel: { required: true }
+                },
+                messages: {
+                    nev: "Your name is required!",
+                    email: "Please provide a valid Email adress!",
+                    telefon: "Please provide your phone number!",
+                    beleegy: "←Please check this box!", orak:
+                        "Please put in the number of your hours!",
+                    kedvencetel: "Please write down your favourite dish!"
+                },
+            });
+        });
+    </script>
+
+
+
+
+
+<footer>This site is for educational purposes only made by: Hajdu Gellert</footer>
+</body>
+
+</html>

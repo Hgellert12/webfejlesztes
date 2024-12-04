@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <meta name="author" content="Hajdu Gellert">
+    <meta name="content" content="This page contains an easy quiz about cooking with points at the end">
+    <link rel="icon" type="image/x-icon" href="kepek/knife.png">
+    <link rel="stylesheet" href="oldal.css">
+    <style>#elso{display: block;}#masodik{display: none;}#harmadik{display: none;}#negyedik{display: none;}#otodik{display: none;} footer{position: absolute;
+    bottom: 0;}</style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Gastronomy</h1>
+            <h2>Quiz</h2>
+        </header>
+        <nav>
+            <a href="index.html" class="menu">History</a>
+            <a href="sefek.html" class="menu">Chefs</a>
+            <a href="receptek.html" class="menu">Recipes</a>
+
+            <a href="#" id="current" class="menu">Quiz </a>
+            <a href="kerdoiv.html" class="menu">Questionnaire</a>
+        </nav>
+        <form action="#" id="pontquiz">
+            <div id="elso"><label>1. Which of these is not a type of pasta?</label><br>
+                <input type="radio" name="teszta" id="T1" checked>Penne<br>
+                <input type="radio" name="teszta" id="T2">Fettuccine<br>
+                <input type="radio" name="teszta" id="T3">Couscous<br>
+                <input type="radio" name="teszta" id="T4">Spaghetti<br>
+                <button id="gomb" class="tovabb" type="button">Next</button>
+            </div>
+            
+            <div id="masodik"><label>2. Which of the following are herbs? (Select all that apply)</label><br>
+                <input type="checkbox" name="fuszer" id="basil"> Basil<br>
+                <input type="checkbox" name="fuszer" id="pepper"> Pepper<br>
+                <input type="checkbox" name="fuszer" id="oregano"> Oregano<br>
+                <input type="checkbox" name="fuszer" id="salt"> Salt<br>
+                <button id="gomb2" class="tovabb"  type="button">Next</button>
+                
+            </div>
+            <div id="harmadik"><label>3. What is the common cooking temperature for boiling water?</label><br>
+                <select name="forras" id="lista">
+                    <option value="100">100°C</option>
+                    <option value="50">50°C</option>
+                    <option value="200">200°C</option>
+                </select><br>
+                <button id="gomb3" class="tovabb"  type="button">Next</button>
+            </div>
+            <div id="negyedik"><label>4. Name the main ingredient in bread (in lowercase)</label><br>
+                <input type="text" name="kenyer" placeholder="Enter your answer" id="kenyer"><br>
+                <button id="gomb4" class="tovabb" type="button">Next</button>
+            </div>
+            <div id="otodik">
+                <label>5. How many times do people usually eat in a day?</label><br>
+                    <input type="number" id="hanyszor" required><br>
+                    <button id="beadas" class="tovabb">submit</button>
+                </div>
+            <div id="osszpontsz"></div>
+
+
+        </form>
+        <footer>This site is for educational purposes only made by: Hajdu Gellert</footer>
+    </div>
+    <script src="javascriptem.js"></script>
+
+    </body>
+</html>
